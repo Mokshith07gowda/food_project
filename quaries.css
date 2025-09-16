@@ -1,0 +1,477 @@
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Mobile First Base Styles */
+@media (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .row {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    
+    /* Header adjustments */
+    header {
+        background-attachment: scroll;
+        height: 70vh;
+        min-height: 400px;
+    }
+    
+    .hero-text-box h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        display: block;
+        margin: 10px auto;
+        padding: 15px 25px;
+        font-size: 16px;
+        width: 90%;
+        max-width: 280px;
+        text-align: center;
+    }
+    
+    /* Navigation for mobile */
+    .main-nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 20px 0;
+        transform: translateY(-100vh);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+    
+    .main-nav.active {
+        transform: translateY(0);
+    }
+    
+    .main-nav li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-nav li a {
+        font-size: 18px;
+        padding: 15px 20px;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .logo {
+        height: 40px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 767px) {
+    html {
+        font-size: 18px;
+    }
+    
+    .container, .row {
+        padding: 0 15px;
+    }
+    
+    /* Grid system - all columns become full width */
+    .col.span_1_of_4,
+    .col.span_2_of_4,
+    .col.span_3_of_4,
+    .col.span_4_of_4,
+    .col.span_1_of_3,
+    .col.span_2_of_3,
+    .col.span_3_of_3,
+    .col.span_1_of_2,
+    .col.span_2_of_2 {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    /* Section adjustments */
+    section {
+        padding: 60px 0;
+    }
+    
+    /* Features section */
+    .section-features h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    .section-features > .row > p {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .section-features .col {
+        margin-bottom: 40px;
+    }
+    
+    .section-features ion-icon {
+        font-size: 45px;
+    }
+    
+    .section-features h3 {
+        font-size: 20px;
+    }
+    
+    .section-features p {
+        font-size: 16px;
+    }
+    
+    /* Meals section */
+    .meals-showcase {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .meals-showcase li {
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Steps section */
+    .section-steps .col {
+        text-align: center;
+    }
+    
+    .steps-box img {
+        width: 70%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .work-step {
+        text-align: left;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+    
+    .work-step div {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .work-step p {
+        font-size: 16px;
+    }
+    
+    .btn-app1 img,
+    .btn-app2 img {
+        height: 60px;
+        margin: 10px 5px 0 0;
+    }
+    
+    /* Cities section */
+    .section-cities h2 {
+        font-size: 28px;
+    }
+    
+    .section-cities .col {
+        margin-bottom: 40px;
+    }
+    
+    .section-cities img {
+        height: 180px;
+    }
+    
+    .section-cities h3 {
+        font-size: 24px;
+    }
+    
+    .city-feature {
+        font-size: 16px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    /* Testimonials section */
+    .section-testimonials {
+        background-attachment: scroll;
+        padding: 80px 0;
+    }
+    
+    .section-testimonials h2 {
+        font-size: 28px;
+    }
+    
+    .section-testimonials blockquote {
+        font-size: 16px;
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .section-testimonials cite img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Plans section */
+    .section-plans {
+        background-attachment: scroll;
+    }
+    
+    .section-plans h2 {
+        font-size: 28px;
+    }
+    
+    .plan-box {
+        margin-bottom: 30px;
+        padding: 30px 20px;
+    }
+    
+    .plan-price {
+        font-size: 24px;
+    }
+    
+    .plan-price-meal {
+        font-size: 14px;
+    }
+    
+    /* Form section */
+    .section-form form {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+    
+    .section-form .row {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
+    }
+    
+    .section-form label {
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    
+    .section-form input[type="text"],
+    .section-form input[type="email"],
+    .section-form select,
+    .section-form textarea {
+        width: 100%;
+    }
+    
+    .section-form textarea {
+        min-height: 100px;
+    }
+    
+    .section-form input[type="submit"] {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    /* Footer */
+    .footer .row:first-child {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-nav li:not(:last-child)::after {
+        content: none;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 19px;
+    }
+    
+    .row {
+        max-width: 750px;
+    }
+    
+    /* Grid adjustments for tablet */
+    .col.span_1_of_4 {
+        width: 49.2%;
+    }
+    
+    .col.span_1_of_4:nth-child(odd) {
+        margin-left: 0;
+    }
+    
+    .col.span_1_of_4:nth-child(even) {
+        margin-left: 1.6%;
+    }
+    
+    /* Navigation adjustments */
+    .main-nav {
+        gap: 20px;
+    }
+    
+    .main-nav li a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    /* Hero section */
+    .hero-text-box h1 {
+        font-size: 42px;
+    }
+    
+    /* Features section */
+    .section-features > .row > p {
+        width: 85%;
+    }
+    
+    /* Steps section */
+    .steps-box img {
+        width: 60%;
+    }
+    
+    /* Cities section */
+    .section-cities img {
+        height: 200px;
+    }
+    
+    /* Plans section */
+    .plan-box {
+        padding: 35px 25px;
+    }
+}
+
+/* Tablet Landscape & Small Desktop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .row {
+        max-width: 970px;
+    }
+    
+    .main-nav {
+        gap: 25px;
+    }
+    
+    .main-nav li a {
+        font-size: 17px;
+    }
+    
+    .hero-text-box h1 {
+        font-size: 46px;
+    }
+    
+    .section-features > .row > p {
+        width: 75%;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .row {
+        max-width: 1140px;
+    }
+    
+    .hero-text-box h1 {
+        font-size: 50px;
+    }
+    
+    .section-features > .row > p {
+        width: 70%;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize images and icons for retina displays */
+    .logo,
+    .steps-box img,
+    .section-cities img,
+    .section-testimonials cite img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    header {
+        height: 90vh;
+    }
+    
+    .hero-text-box h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        margin: 5px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    header,
+    nav,
+    .section-testimonials,
+    .section-plans,
+    footer {
+        display: none;
+    }
+    
+    .section-features,
+    .section-cities {
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .section-features,
+    .section-steps,
+    .section-cities {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: #ecf0f1;
+    }
+    
+    .section-features h2,
+    .section-steps h2,
+    .section-cities h2 {
+        color: #ecf0f1;
+    }
+    
+    .feature-box:hover,
+    .city-card:hover {
+        background-color: rgba(52, 152, 219, 0.1);
+    }
+}
