@@ -3,292 +3,498 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Laundry Service</title>
-    <link rel="icon" type="image/x-icon" href="index.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
+    <title>My food project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vendors(frameworks downloaded)/css/normalize.css">
+    <link rel="stylesheet" href="vendors(frameworks downloaded)/css/grid.css">
+    <link rel="stylesheet" href="vendors(frameworks downloaded)/css/quaries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resources/CSS/style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="index.png" alt="WASH Logo" class="logo-image">
-            <div class="brand">Zap Wash</div>
+    <header>
+        <nav>
+            <div class="row">
+                <a href="#">
+                     <img  class="logo"
+                    src="https://static.vecteezy.com/system/resources/previews/047/411/214/non_2x/food-logo-icon-symbol-silhouette-on-white-background-free-vector.jpg"
+                    alt="logo-img">
+                </a>
+               
+                <ul class="main-nav">
+                    <li><a href="#FoodDelivery">Food delivery</a></li>
+                    <li><a href="#How-it-works">How it works</a></li>
+                    <li><a href="#Our-cities">Our cities</a></li>
+                    <li><a href="#Sign-up">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Goodbye junk food <br>Hello healthy food!</h1>
+            <a class="btn btn-full" href="##Sign-up">I'm Hungry!</a>
+            <a class="btn btn-ghost" href="#Our-cities">Show me More</a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+    </header>
+
+    <section id="FoodDelivery" class="section-features">
+        <div class="row">
+            <h2>Get food fast &mdash; not fast food </h2>
+            <p>
+                Hello, we're Omifood, your new premium food delivery service. We know you're always busy..
+                No time to cook? No problem. We can cook it for you. We are ready to deliver delicious, healthy
+                meals straight to your door, whenever you need them.
+                Enjoy fresh ingredients, quick service, and a variety of options
+                to suit your taste and lifestyle.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_4">
+                <ion-icon name="infinite-outline"></ion-icon>
+                <h3>Up to 365 days/year</h3>
+                <p>
+                    We know you have a busy life, and that's why we offer a 365 days/year guarantee.
+                    If you're not satisfied with your order, you can get a full refund.
+                </p>
+            </div>
+
+            <div class="col span_1_of_4">
+                <ion-icon name="alarm-outline"></ion-icon>
+                <h3>Ready in minutes</h3>
+                <p>
+                    No more waiting for hours! Our chefs prepare your meal as soon as you order,
+                    ensuring it's hot, fresh, and delivered to your doorstep in minutes.
+                </p>
+            </div>
+
+            <div class="col span_1_of_4">
+                <ion-icon name="leaf-outline"></ion-icon>
+                <h3>100% organic</h3>
+                <p>
+                    Enjoy meals made from 100% organic ingredients, sourced locally and sustainably. We believe in
+                    healthy eating and support farmers who use eco-friendly practices.
+                </p>
+            </div>
+
+            <div class="col span_1_of_4">
+                <ion-icon name="fast-food-outline"></ion-icon>
+                <h3>Order anything</h3>
+                <p>
+                    From salads to desserts, our menu covers a wide range of cuisines.
+                    Whether you crave Italian, Indian, Chinese, or something sweet,
+                    just order and we'll deliver it fresh to you.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="seaction-meals">
+
+
+        <ul class="meals-showcase">
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://tap.health/wp-content/uploads/2025/06/How_Many_Calories_in_Masala_Dosa__withoyt_text.webp"
+                        alt="img1">
+
+                </figure>
+            </li>
+
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://bombaypalace.ca/wp-content/uploads/2019/11/6.jpg" alt="img2">
+
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000370/img/en/a0000370_parts_580db8503c1ee.jpg?20201002142956&q=80&rw=686&rh=490"
+                        alt="img3">
+
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://www.marionskitchen.com/wp-content/uploads/2022/11/Marion-Grasby-Best-Japanese-Recipes-01-1200x1500.jpg"
+                        alt="img4">
+
+                </figure>
+            </li>
         </ul>
-        <div class="username">User Name</div>
-    </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-left">
-                <h1>Transform Your <br>Wardrobe with Premium <br><span class="highlight">Laundry Services!</span></h1>
-                <p>From expert stain removal to gentle fabric care, we deliver exceptional cleaning with unmatched
-                    convenience. Schedule a pickup and experience the difference of professional laundry care today!</p>
-                <button class="cta-button" onclick="scrollToBooking()">Book a service today!</button>
+        <ul class="meals-showcase">
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://img.delicious.com.au/wzxqgFZN/del/2021/03/chicken-and-black-bean-burrito-147051-1.jpg"
+                        alt="img5">
+
+                </figure>
+            </li>
+
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/taco-salad-lead-643eeb397a281.jpg?crop=0.635xw:0.952xh;0.207xw,0.0409xh&resize=1200:*"
+                        alt="img6">
+
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://insanelygoodrecipes.com/wp-content/uploads/2023/01/Italian-Meatballs-with-Pasta-and-Tomato-Sauce.jpg"
+                        alt="img7">
+
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/210211140233-03-classic-italian-dishes.jpg?q=w_1110,c_fill"
+                        alt="img8">
+
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section id="How-it-works" class="section-steps">
+        <div class="row">
+            <h2>How it works &mdash; Simple as 1,2,3</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 steps-box">
+                <img src="resources/img/phone.png" alt="phone-img">
             </div>
-            <div class="hero-right">
-                <img src="https://static.vecteezy.com/system/resources/previews/024/100/307/non_2x/laundry-service-laundromat-home-appliance-housekeeping-concept-tiny-people-laundry-in-washing-machine-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg"
-                    alt="Laundry Illustration" class="hero-image">
+            <div class="col span_1_of_2 steps-box">
+                <div class="work-step">
+                    <div>1</div>
+                    <p>Choose plan that fits best for your need and sign-up today</p>
+                </div>
+                <div class="work-step">
+                    <div>2</div>
+                    <p>Pay for the plan and download the app</p>
+                </div>
+                <div class="work-step">
+                    <div>3</div>
+                    <p>You are done start ordering!!</p>
+                </div>
+                <a href="#" class="btn-app1"><img
+                        src="https://freelogopng.com/images/all_img/1664287128google-play-store-logo-png.png"
+                        alt="Google play store"></a>
+
+                <a href="#" class="btn-app2"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Download_on_the_App_Store_RGB_blk.svg/1280px-Download_on_the_App_Store_RGB_blk.svg.png"
+                        alt="App store"></a>
+
             </div>
         </div>
     </section>
 
-    <section class="service-overview">
-        <div class="achievements">
-            <div class="achievement">
-                <h3>25+</h3>
-                <p>Laundry Services</p>
-            </div>
-            <div class="achievement">
-                <h3>440+</h3>
-                <p>Happy Customers</p>
-            </div>
-            <div class="achievement">
-                <h3>3+</h3>
-                <p>Years of Experience</p>
-            </div>
+    <section id="Our-cities" class="section-cities">
+        <div class="row">
+            <h2>we"re currently in these cities</h2>
         </div>
-    </section>
-
-    <section class="booking-services" id="services">
-        <div class="booking-content">
-            <div class="services-left">
-                <h2 class="services-title">Our Services</h2>
-                <p class="add-to-cart-info">Click On The Add To Cart Button To Add The Services To Your Cart</p>
-
-                <div class="service-item" data-service="Dry Cleaning" data-price="200">
-                    <div class="service-info">
-                        <i class="fas fa-tshirt service-icon"></i>
-                        <div class="service-details">
-                            <h4>Dry Cleaning</h4>
-                        </div>
-                    </div>
-                    <div class="service-action-row">
-                        <span class="service-price">₹200.00</span>
-                        <div class="service-actions">
-                            <button class="add-btn" onclick="addToCart('Dry Cleaning', 200)">Add Item</button>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col span_1_of_4">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/attr_wiki_2838_20190305154327.jpg"
+                    alt="Bengaluru">
+                <h3>Bengaluru</h3>
+                <div class="city-feature">
+                    <ion-icon name="person-circle-outline"></ion-icon>4000+ Happy Eaters
                 </div>
-
-                <div class="service-item" data-service="Wash & Fold" data-price="100">
-                    <div class="service-info">
-                        <i class="fas fa-soap service-icon"></i>
-                        <div class="service-details">
-                            <h4>Wash & Fold</h4>
-                        </div>
-                    </div>
-                    <div class="service-action-row">
-                        <span class="service-price">₹100.00</span>
-                        <div class="service-actions">
-                            <button class="add-btn" onclick="addToCart('Wash & Fold', 100)">Add Item</button>
-                        </div>
-                    </div>
+                <div class="city-feature">
+                    <ion-icon name="star"></ion-icon>350+ chefs
                 </div>
-
-                <div class="service-item" data-service="Ironing" data-price="30">
-                    <div class="service-info">
-                        <i class="fas fa-tshirt service-icon"></i>
-                        <div class="service-details">
-                            <h4>Ironing</h4>
-                        </div>
-                    </div>
-                    <div class="service-action-row">
-                        <span class="service-price">₹30.00</span>
-                        <div class="service-actions">
-                            <button class="add-btn" onclick="addToCart('Ironing', 30)">Add Item</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-item" data-service="Stain Removal" data-price="500">
-                    <div class="service-info">
-                        <i class="fas fa-spray-can service-icon"></i>
-                        <div class="service-details">
-                            <h4>Stain Removal</h4>
-                        </div>
-                    </div>
-                    <div class="service-action-row">
-                        <span class="service-price">₹500.00</span>
-                        <div class="service-actions">
-                            <button class="add-btn" onclick="addToCart('Stain Removal', 500)">Add Item</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-item" data-service="Leather & Suede Cleaning" data-price="999">
-                    <div class="service-info">
-                        <i class="fas fa-gem service-icon"></i>
-                        <div class="service-details">
-                            <h4>Leather & Suede Cleaning</h4>
-                        </div>
-                    </div>
-                    <div class="service-action-row">
-                        <span class="service-price">₹999.00</span>
-                        <div class="service-actions">
-                            <button class="add-btn" onclick="addToCart('Leather & Suede Cleaning', 999)">Add Item</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-item no-border-bottom" data-service="Wedding Dress Cleaning" data-price="2800">
-                    <div class="service-info">
-                        <i class="fas fa-ring service-icon"></i>
-                        <div class="service-details">
-                            <h4>Wedding Dress Cleaning</h4>
-                        </div>
-                    </div>
-                    <div class="service-action-row">
-                        <span class="service-price">₹2800.00</span>
-                        <div class="service-actions">
-                            <button class="add-btn" onclick="addToCart('Wedding Dress Cleaning', 2800)">Add Item</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="add-to-cart-info-message">
-                    <i class="fas fa-info-circle"></i> Add items to the cart and book now
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <a href="#">@omnifoodBr</a>
                 </div>
             </div>
-
-            <div class="services-right">
-                <div class="cart-section">
-                    <h3 class="added-items-title">Added Items</h3>
-                    <div class="cart-header-row">
-                        <span>S.No.</span>
-                        <span>Service Name</span>
-                        <span>Price</span>
-                    </div>
-                    <div id="cartItems">
-                        <div class="cart-empty-message">
-                            <i class="fas fa-shopping-cart cart-empty-icon"></i>
-                            <p>No items added yet</p>
-                        </div>
-                    </div>
-                    <div class="total-amount" id="totalAmount">
-                        Total Amount: ₹0.00
-                    </div>
+            <div class="col span_1_of_4">
+                <img src="https://s3.amazonaws.com/cdn.micato.com/wp-content/uploads/2018/09/07222256/mumbai-5.jpg"
+                    alt="Mumbai">
+                <h3>Mumbai</h3>
+                <div class="city-feature">
+                    <ion-icon name="person-circle-outline"></ion-icon>3500+ Happy Eaters
                 </div>
-
-                <div class="booking-form">
-                    <h3 class="book-now-title">Book Now</h3>
-                    <form id="bookingForm">
-                        <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" name="fullName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <button type="submit" class="book-now-btn">Book now</button>
-                    </form>
-                    <div id="successMessage" class="success-message">
-                        Thank you For Booking the Service! We will get back to you soon!
-                    </div>
+                <div class="city-feature">
+                    <ion-icon name="star"></ion-icon>250+ chefs
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <a href="#">@omnifoodMb</a>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/98/f7/df/charminar.jpg?w=1400&h=1400&s=1"
+                    alt="Hyderabad">
+                <h3>Hyderabad</h3>
+                <div class="city-feature">
+                    <ion-icon name="person-circle-outline"></ion-icon>2500+ Happy Eaters
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star"></ion-icon>200+ chefs
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <a href="#">@omnifoodHy</a>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <img src="https://c.ndtvimg.com/gws/ms/top-8-places-to-visit-in-chennai/assets/5.jpeg?1737971702"
+                    alt="Chennai">
+                <h3>Chennai</h3>
+                <div class="city-feature">
+                    <ion-icon name="person-circle-outline"></ion-icon>1500+ Happy Eaters
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="star"></ion-icon>150+ chefs
+                </div>
+                <div class="city-feature">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <a href="#">@omnifoodCh</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="quality-section" id="about">
-        <div class="quality-content">
-            <h2 class="quality-title">Why Choose Our Service?</h2>
-            <div class="quality-grid">
-                <div class="quality-item">
-                    <i class="fas fa-crown quality-icon"></i>
-                    <h3>Premium Services</h3>
-                    <p>We use only the finest cleaning products and techniques to ensure your clothes receive the best
-                        care possible.</p>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <h2>Our customer can't live without us</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3">
+                <blockquote>
+                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so
+                    Omnifood is a life-saver. Now that I got used to it, I couldn't live without daily meals!
+                    <cite><img
+                            src="https://thumbs.dreamstime.com/b/smiling-man-glasses-beard-wearing-white-shirt-arms-crossed-friendly-expression-cartoon-style-isolated-smiling-man-362608434.jpg"
+                            alt="Aditya Gupta">Aditya Gupta</cite>
+                </blockquote>
+            </div>
+            <div class="col span_1_of_3">
+                <blockquote>
+
+                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food
+                    delivery here in Bengaluru, but no one comes even close to Omnifood. Me and my family are so in
+                    love!
+                    <cite><img
+                            src="https://t3.ftcdn.net/jpg/09/37/60/02/360_F_937600227_RlGrfMocC7StqnaR1CZPb4Bs2xjKfy4c.jpg"
+                            alt="Sunita Shetty">Sunita Shetty</cite>
+                </blockquote>
+            </div>
+            <div class="col span_1_of_3">
+                <blockquote>
+                    I was looking for a quick and easy food delivery service in Hyderabad. I tried a lot of them and
+                    ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    <cite><img
+                            src="https://t3.ftcdn.net/jpg/06/44/10/28/360_F_644102888_xpJhbJ0c2l533J27jci9ETbiDFXsR1GI.jpg"
+                            alt="Sanjay Verma">Sanjay Verma</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sign-up" class="section-plans" >
+        <div class="row">
+            <h2>Start eating healthy today</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3">
+                <div class="plan-box">
+                    <div>
+                        <h3>premium</h3>
+                        <p class="plan-price">&#8377;5670 / month</p>
+                        <p class="plan-price-meal">That's only &#8377;189 per meal </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>1 meal everyday</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-premium">sign Up</a>
+                    </div>
                 </div>
-                <div class="quality-item">
-                    <i class="fas fa-headset quality-icon"></i>
-                    <h3>Quick Support</h3>
-                    <p>Our dedicated customer service team is always ready to assist you with prompt solutions to all
-                        your queries.</p>
+            </div>
+             <div class="col span_1_of_3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Pro</h3>
+                        <p class="plan-price">&#8377;2300 / month</p>
+                        <p class="plan-price-meal">That's only &#8377;120 per meal </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>1 meal in 3 days</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-pro">sign Up</a>
+                    </div>
                 </div>
-                <div class="quality-item">
-                    <i class="fas fa-truck quality-icon"></i>
-                    <h3>Hassle Free Delivery</h3>
-                    <p>Convenient pickup and delivery services right to your doorstep, making laundry care effortless
-                        for you.</p>
-                </div>
-                <div class="quality-item">
-                    <i class="fas fa-dollar-sign quality-icon"></i>
-                    <h3>Affordable Prices</h3>
-                    <p>Quality service doesn't have to break the bank. We offer competitive prices that fit your budget.
-                    </p>
+            </div>
+             <div class="col span_1_of_3">
+                <div class="plan-box">
+                    <div>
+                        <h3>Starter</h3>
+                        <p class="plan-price">&#8377;250/ meal</p>
+                        <p class="plan-price-meal">&nbsp; </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>Anytime order</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li><ion-icon name="close-outline"></ion-icon>Access to newest creations</li>
+                            <li><ion-icon name="checkmark-outline"></ion-icon>free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-starter">sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="newsletter-section">
-        <div class="newsletter-content">
-            <h2>Subscribe to our newsletter</h2>
-            <p>Stay updated with our latest offers and laundry tips!</p>
-            <div class="newsletter-form">
-                <input type="text" id="newsletterName" placeholder="Full name" class="newsletter-input">
-                <input type="email" id="newsletterEmail" placeholder="Email" class="newsletter-input">
-                <button class="newsletter-btn" onclick="subscribeNewsletter()">Subscribe</button>
-            </div>
+    <section class="section-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form action="#" method="POST">
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label >Name</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="text" name="name" id="name" placeholder="your name" required>
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col span_1_of_3">
+                        <label >Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" name="email" id="email" placeholder="your email" required>
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                       <select name="find-us" id="find-us">
+                        <option value="--">--------</option>
+                        <option value="friends">Friends</option>
+                        <option value="family">Family</option>
+                        <option value="search">Search engine</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="others">Others</option>
+                       </select>
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="news">Newsletter?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="checkbox" name="news" id="news" checked title="Subscribe to newsletter">
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col span_1_of_3">
+                        <label >Comments</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea name="text" id="ta" cols="30" rows="10" placeholder="Enter your request" title="Comments"></textarea>
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="col span_1_of_3">
+                        <label >&nbsp;</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="submit" value="sign-up">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
-    <footer class="footer" id="contact">
-        <div class="footer-content">
-            <div class="footer-section">
-                <img src="index.png" alt="WASH Logo" class="logo-image">
-                <p><strong>About us</strong></p>
-                <p>Experience professional cleaning with our eco-friendly processes and convenient pickup and delivery
-                    service </p>
+    <footer class="footer">
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+
             </div>
-            <div class="footer-section">
-                <h3>Important Links</h3>
-                <p><a href="#about">About Us</a></p>
-                <p><a href="#">Contact us</a></p>
-                <p><a href="#">Privacy Policy</a></p>
-                <p><a href="#">Terms of use</a></p>
-                <p><a href="#">Refund Policy</a></p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>info@Zapwash.com</p>
-                <p>+91 91234 56780</p>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
+
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li class="logo-facebook"><ion-icon name="logo-facebook"></ion-icon></li>
+                    <li class="logo-twitter"><ion-icon name="logo-twitter"></ion-icon></li>
+                    <li class="Google"><ion-icon name="logo-google"></ion-icon></li>
+                    <li class="logo-instagram"><ion-icon name="logo-instagram"></ion-icon></li>
+                </ul>
+
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Fresh Laundry Service. All rights reserved.</p>
+        <div class="row">
+            <p>Copyright &copy; 2020 by omnifood. All rights reserved.</p>
         </div>
     </footer>
 
-    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()" title="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-    <script src="script.js"></script>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 
 </html>
